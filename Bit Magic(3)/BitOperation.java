@@ -134,6 +134,13 @@ class BitOperation{
 		a ^= b;
 		System.out.println("After swapping a : "+a);
 		System.out.println("After swapping b : "+b);
+		
+		//Unsigned right shift
+		//The signed right shift (>>) will make positive number negative since java has 32-bit integers
+		//it adds 1 as leading bits instead of 0
+		//But the unsigned right shift(>>>) treats negative number as positive only by adding 0s as leading bits
+		System.out.println("Right Shift(Signed) : "+(-2 >> 1)); //(Right shift -2 with any number of bits will always give -1 as result)
+		System.out.println("Right Shift(Signed) : "+(-2 >>> 1)); //this will return a positive number
 	}
 }
 
