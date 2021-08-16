@@ -45,6 +45,11 @@ class PowerOfTwo{
 		return ((x & (x-1)) == 0);
 	}
 	
+	//Test
+	public static boolean checkPower2(int x){
+		return (!(x&(x-1)));
+	}
+	
 	public static void main(String[] args){
 			int n = 1;
 			
@@ -56,7 +61,7 @@ class PowerOfTwo{
 				
 				System.out.println("Result(Naive Solution) : "+isPow2(n));
 				System.out.println("Result : "+checkPower(n));
-				
+				System.out.println("Result(New) : "+checkPower2(n));
 			}
 	}
 }
