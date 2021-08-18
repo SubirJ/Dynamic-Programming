@@ -18,17 +18,23 @@ class PowerSet{
 	//function to find Power Set
 	public static void printPowerSet(String str){
 		int n = str.length();
-		int powSize = Math.pow(2,n);
+		int powSize = (int)Math.pow(2,n);
 		
-		
+		for(int counter=0; counter < powSize; counter++){
+			for(int j=0; j < n; j++){
+				if((counter & (1 << j)) != 0)
+					System.out.print(str.charAt(j));
+			}
+			System.out.println("");
+		}
 	}
 
-	public static void main(Stringp[] args){
+	public static void main(String[] args){
 		String str = "";
 		
 		Scanner sc = new Scanner(System.in);
 		
-		while(str != "1"){
+		while(str != null){
 			System.out.println("Enter the string to get the power set of : ");
 			str = sc.next();
 			
