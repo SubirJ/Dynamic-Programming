@@ -2,7 +2,7 @@
 Count the number of set bits of a given number.
 
 number : 7 -> 0111
-o/p : 3 (As 3 bits are set
+o/p : 3 (As 3 bits are set)
 
 number : 13 -> 1101
 o/p : 3
