@@ -16,6 +16,7 @@ import java.util.*;
 class PowerSet{
 	
 	//function to find Power Set
+	//
 	public static void printPowerSet(String str){
 		int n = str.length();
 		int powSize = (int)Math.pow(2,n);
