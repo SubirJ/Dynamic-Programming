@@ -76,7 +76,8 @@ import java.util.*;
 
 class CountSetBits{
 	
-	//Find the highest power of 2 available from 1 to n-
+	//Find the highest power of 2 available from 1 to n
+	//Time Complexity
 	public static int findPowerOf2(int n){
 		int x = 0;
 		
