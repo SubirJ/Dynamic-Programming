@@ -39,7 +39,7 @@ Step 1 : Find the highest power of 2 in this list, which is 8 = 2^3
 		 2^(x-1) * x
 	
 Step 2 : Now we calculate number of set bits for 8 to 11.
-		 We calculate all the 1s of the highest place which will be (n- 2^x + 1)
+		 We calculate all the 1s of the highest place which will be (n - 2^x + 1)
 		 which will be (11 - 2^3 + 1) = 11-8+1 = 3+1 = 4  
 		 8  = 1 | 000
 		 9  = 1 | 001
@@ -89,6 +89,8 @@ class CountSetBits{
 	}
 	
 	//Exceute the solution
+	//Time Complexity : O(Log N)
+	//Space Complexity / Auxiliary Space : O(1)
 	public static int solution(int n){
 		if(n == 0)
 			return 0;
