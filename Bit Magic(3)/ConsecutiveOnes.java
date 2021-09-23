@@ -17,6 +17,8 @@ Explanation:
 Binary representation of 222 is 
 11011110, in which 1111 is the 
 longest consecutive set bits of length 4. 
+
+new
 */
 
 import java.util.*;
