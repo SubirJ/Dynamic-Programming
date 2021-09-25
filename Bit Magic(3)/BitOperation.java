@@ -6,7 +6,7 @@ import java.util.*;
 
 class BitOperation{
 	
-	//This function takes a number as input and returns its output
+	//This function takes a number as input and returns its inverted bits output
 	//Ex : if 9 as input then 9 -> 1001 -> 0110 -> 6
 	public static int invertBits(int x){
 		// calculating number of
